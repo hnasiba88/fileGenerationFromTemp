@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+        <style type='text/css'> 
+            * { font-family: 'Arial Unicode MS';
+			    font-size: 9pt;
+			   }
+			hr { this solid black }
+			#color { background-color: #BEBEBE; }
+			.c { text-align: center;}
+			.l { text-align: left;}
+			.r { text-align: right;}
+        </style>
+    </head>
+    <body>
+		<table  width="100%"">
+	   		<tr>
+				<td class= "c" colspan="2">  <img src= "<#=tw.local.print.logoFile#>" alt="IBA logo"  /> </td>
+			</tr>	
+	   </table>
+	 
+	 <p style="text-align:center;">	<b> Hörmətli müştəri! Bankımızda hesab açdığınıza görə təşəkkür edirik!</b></p >
+	 <p style="text-align:center;">	<b> Sizin respublikadaxili əməliyyatlarınız üçün bank rekvizitlərinizi Sizə təqdim edirik:</b></p >
+	 <p style="text-align:center;">	<b> Dear customer! Thank you for the openning account at IBA!</b></p >
+	 <p style="text-align:center;">	<b> Please see your bank details fot the local transfers:</b></p >
+
+	 <br/>
+ 
+	  <table border="0" width="100%">
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Beneficiary Name (Alan müştərinin adı):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.customerName#></td>
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Beneficiary account (Alan müştərinin hesab nömrəsi, IBAN):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.account#></td>    
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Beneficiary Bank (Alan Bank):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.branchName#></td>
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>    
+			<td class="l" >SWIFT Code (Alan Bankın SWIFT kodu):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.SWIFTcode#></td>    
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Correspondent Account (Alan Bankın müxbir hesabı):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.correspondentAcc1#></td>
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Bank Code (Alan Bankın kodu):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.details#></td> 
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Tax ID (Bankın VÖEN-i):&nbsp;</td>
+			<td class="l" ><#=tw.local.print.voen#></td>    
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Bankın ünvanı:&nbsp;</td>
+			<td class="l" ><#=tw.local.print.bankAddress#></td>    
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>	
+			<td class="l" >Əlaqə telefonları:</td>
+			<td class="l" > <#=tw.local.print.branchPhone#> /</td>     
+		</tr>
+		<tr>
+			<td class="l" colspan="2"> </td>
+		</tr>
+		<tr>
+			<td class="l" >Müştəri VÖEN-i:&nbsp;</td>
+			<td class="l" ></td>    
+		</tr>
+	  </table>
+  	  
+    </body>
+</html>

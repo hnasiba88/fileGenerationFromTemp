@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/jar_files (1)(1)/attoparser-2.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/flying-saucer-core-9.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/flying-saucer-pdf-itext5-9.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/itextpdf-5.5.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/slf4j-jdk14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/thymeleaf-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/ognl-2.7.3.jar/ognl-2.7.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Downloads/jboss-javassist-javassist-3_26_0_ga-10-g1507091/javassist.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Documents/BLOCKCHAIN/thymleaf/unbescape-1.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/003571/Desktop/tidy.jar/tidy.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
