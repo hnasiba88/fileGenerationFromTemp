@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+        <style type='text/css'> 	
+		 * { font-family: 'Arial Unicode MS'; }
+			.l{ text-align: left; }
+			.c{ text-align: center; }
+			.r{ text-align: right; }
+		    .header{ text-align: center;  font-size: 20pt;}
+			.img{width:1000 px;height:200px;}
+			.no_table{border-style:none;}
+			.border {border: 1px solid black; padding: 5px; border-collapse: collapse;}
+		</style>
+	 </head>
+
+
+	 <body>
+	   <br/>
+	   <p class= "header" > <b> Bank kartının sifarişinə dair Ərizə  </b> </p>
+	   
+	   <br/>
+	   <br/>
+
+	   <h3><i> ( Fərdi kartın alınması haqqında məlumat VİSA/MasterCard/American Express)</i></h3>
+	   <br/>
+
+	   <table class="border" width = "80%" >
+	 
+		 <tr class="border">
+		   <td class="border" > Adı, Soyadı, Ata adı:</td>
+		   <td class="border" > [[${data.getClientName()}]] </td>
+		 </tr>
+		 <tr>
+		   <td class="border" > Kart nömrəsi: </td>
+		   <td class="border" > [[${data.getClientCardNumber()}]] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+		 </tr>
+		  <tr>
+		   <td class="border" > Kartın Növü: </td>
+		   <td class="border" >[[${data.getCardType()}]]</td>
+		 </tr>
+		  <tr>
+		   <td class="border" > Kartın öncəki etibarlıq tarixi:</td>
+		   <td class="border" > [[${data.getCardOldExpiryDate()}]]</td>
+		 </tr>
+		 <tr>
+		   <td  class="border" > Kart dəyişdirilməsinin səbəbi: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+		   <td  class="border" >[[${data.getCardProlongationReason()}]]  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+		 </tr>
+		 <tr>
+		   <td class="border" > Kartın müddəti  bitmişdirmi?: </td>
+		   <td class="border" >[[${data.getCardExpired()}]]</td>
+		 </tr>
+		 <tr>
+		   <td class="border" > Yeni PİN hazırlansın ? </td>
+		   <td class="border" >[[${data.getChangePIN()}]] </td>
+		 </tr>
+		 <tr>
+		   <td class="border" > Yeni kartın etibarlıq tarixi: </td>
+		   <td class="border" >[[${data.getCardNewExpiryDate()}]]</td>
+		 </tr>
+		 <tr>
+		   <td class="border" > Təcili: ( 10 AZN )  </td>
+		   <td class="border" >[[${data.getStatusUrgent()}]]</td>
+		 </tr>
+		 <tr>
+		   <td class="border" > Plastik kart üzrə rüsum [[${data.getAmountInWriting1()}]] </td>
+		   <td class="border" >[[${data.getAmount1()}]] [[${data.getCurrency()}]]</td>
+		 </tr>
+
+	 </table>
+ 
+ <br/>
+ <br/>
+			
+		<table class="no_table" width = "80%" >
+		 <tr>	
+			<td  width="40%" > Müştərinin imzası ...................<span style="font-size: 150%;">&#x2713;</span></td>
+			<td  width="40%" > MXM İmzası ................... <br/> / [[${data.getUserName()}]]  /</td>     
+		 </tr>
+	   </table>
+ <br/>	
+ 
+  </body>
+</html>

@@ -16,12 +16,7 @@
         </style>
     </head>
     <body>
-		<table  width="100%">
-	   		<tr>
-				<td class= "c" colspan="2"></td>
-			</tr>	
-	   </table>
-	 
+		
 	 <p style="text-align:center;">	<b> Hörmətli müştəri! Bankımızda hesab açdığınıza görə təşəkkür edirik!</b></p >
 	 <p style="text-align:center;">	<b> Sizin respublikadaxili əməliyyatlarınız üçün bank rekvizitlərinizi Sizə təqdim edirik:</b></p >
 	 <p style="text-align:center;">	<b> Dear customer! Thank you for the openning account at IBA!</b></p >
@@ -35,63 +30,63 @@
 		</tr>
 		<tr>
 			<td class="l" >Beneficiary Name (Alan müştərinin adı):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>
+			<td class="l" >[[${data.getCustomerName()}]]</td>
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>
 			<td class="l" >Beneficiary account (Alan müştərinin hesab nömrəsi, IBAN):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>    
+			<td class="l" >[[${data.getAccount()}]]</td>    
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>
 			<td class="l" >Beneficiary Bank (Alan Bank):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>
+			<td class="l" >[[${data.getBranchName()}]]</td>
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>    
 			<td class="l" >SWIFT Code (Alan Bankın SWIFT kodu):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>    
+			<td class="l" >[[${data.getSWIFTcode()}]]</td>    
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>
 			<td class="l" >Correspondent Account (Alan Bankın müxbir hesabı):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>
+			<td class="l" >[[${data.getCorrespondentAcc1()}]]</td>
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>
 			<td class="l" >Bank Code (Alan Bankın kodu):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td> 
+			<td class="l" >[[${data.getDetails()}]]</td> 
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>
 			<td class="l" >Tax ID (Bankın VÖEN-i):&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>    
+			<td class="l" >[[${data.getVoen()}]]</td>    
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>
 			<td class="l" >Bankın ünvanı:&nbsp;</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>    
+			<td class="l" >[[${data.getBankAddress()}]]</td>    
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>
 		</tr>
 		<tr>	
 			<td class="l" >Əlaqə telefonları:</td>
-			<td class="l" >[[${data.getFirstname()}]]</td>     
+			<td class="l" >[[${data.getBranchPhone()}]]/</td>     
 		</tr>
 		<tr>
 			<td class="l" colspan="2"> </td>

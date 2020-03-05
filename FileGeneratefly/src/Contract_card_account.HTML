@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+        <style type='text/css'> 
+            *  { font-family: 'Arial Unicode MS';
+			     font-size: 8pt;
+			   }
+			#color { background-color: #BEBEBE; }
+			.c { text-align: center;}
+			.l { text-align: left;}
+			.r { text-align: right;}
+			 p  { text-align: justify; /* Выравнивание по ширине */ }
+			.brd {text-align: center;
+				  border-style: solid;  
+				  border-width: 0.5px;
+				  }
+	        .tb {border-spacing: 0px;}
+        </style>
+    </head>
+    <body>
+	  <table border="0" width="100%">
+		<tr>
+			<td class= "c" colspan="3">  <img src= "logo.png" alt="IBA logo"  /> </td>
+		</tr>	
+		<tr>
+			<td class="c" colspan="3"> </td>
+		</tr>
+	
+		<tr>
+			<td class="c" colspan="3"> <b> Kart hesabının açılması və Ödəniş kartından istifadə haqqında <br/>MÜQAVILƏ №: [[${data.getRefNo()}]] </b> </td>
+		</tr>
+		<tr>
+			<td class="c" colspan="3"> </td>
+		</tr>
+		<tr>
+			<td class="l"><b>[[${data.getBranchCity()}]] şəhəri </b>  </td>
+			<td class="c"> <b>[[${data.getBranchName()}]] </b></td>
+			<td class="r"><b> Tarix: [[${data.getOpenDate()}]] </b> </td>
+		</tr>
+		<tr>
+			<td class="c" colspan="3"> </td>
+		</tr>
+		
+		<tr>
+			<td class="l" colspan="3"> <p class = "justify" >
+			Bundan sonra birlikdə « Tərəflər » və ya müvafiq olaraq « Tərəf » adlandırılacaq, Azərbaycan Respublikasının qanunvericiliyinə və öz nizamnaməsinə əsasən fəaliyyət göstərən «Azərbaycan Beynəlxalq Bankı» Açıq Səhmdar Cəmiyyəti, (bundan sonra «Bank» adlandırılacaq) müvafiq surətdə müvəkkil edilmiş nümayəndəsi [[${data.getBranchChief()}]] şəxsində, bir tərəfdən və öz adından çıxış edən  [[${data.getCustomerName()}]]  (bundan sonra «Müştəri» adlandırılacaq), digər tərəfdən, aşağıdakı şərtlərlə bu müqaviləni (bundan sonra “Müqavilə” adlandırılacaq) bağladılar: 
+			
+			<br/><br/><center><b>1.	Əsas anlayışlar</b></center>
+			<br/>1.1	Bu Müqavilədə istifadə edilən anlayışlar aşağıdakı mənaları ifadə edir:
+			<br/>1.1.1	<b>“Ödəniş kartı”</b> dedikdə nağdsız ödənişlərin aparılması və nağd pul vəsaitlərinin əldə edilməsi üçün nəzədə tutulmuş ödəniş aləti olan müvafiq ödəniş sisteminin plastik kartı; Ödəniş kartı Bankın mülkiyyətidir və Müştərinin istifadəsinə verilir. 
+			<br/>1.1.2	<b>“Kart hesabı”</b> - Ödəniş kartından istifadə etməklə aparılmış əməliyyatlar üzrə hesablaşmaların aparılması üçün Bank tərəfindən Müştərinin adına açılan cari bank hesabı;
+			<br/>1.1.3	<b>“Əlavə kart”</b> - Ödəniş kartı ilə eyni Kart hesabına və ödəniş limitinə malik olan plastik kart; 
+			<br/>1.1.4	<b>“ŞEN-kod”</b> dedikdə Bankomatlar, POS-terminallar və digər elektron qurğular vasitəsi ilə əməliyyatlar zamanı Ödəniş kartının/Əlavə kartın istifadəçisinin identifikasiyası üçün istifadə edilən və hər bir Ödəniş kartına/Əlavə karta verilən fərdi rəqəmli kod; 
+			<br/>1.1.5	<b>“Texniki overdraft”</b> - Müştəriyə overdraftın təqdim edilməsi barədə Tərəflər arasında razılaşma olmadığı halda Ödəniş kartı/Əlavə kart vasitəsilə Kart hesabının qalığından artıq məbləğdə əməliyyatların aparılması; 
+ 
+			
+
+			<br/><center><b>2.	Müqavilənin predmeti</b></center>
+			<br/>2.1	Bu Müqavilənin predmeti Bank tərəfindən Müştərinin adına Ödəniş kartı vasitəsilə hesablaşmaların aparılması üçün Kart hesabının  açılmasından, Ödəniş kartının dövriyyəyə buraxılmasından və Ödəniş kartından istifadə etməklə Kart hesabı üzrə hesablaşmaların aparılması ilə bağlı Tərəflər arasında münasibətlərin tənzimlənməsindən ibarətdir. Müştəri Ödəniş kartı vasitəsi ilə aparılmış əməliyyatlara, eləcə də Ödəniş kartından istifadəyə görə xidmət haqlarını Banka ödəməyi öhdəsinə götürür.
+			<br/>2.2	Bu Müqavilə Azərbaycan Respublikası qanunvericiliyinə, Azərbaycan Respublikası Mərkəzi Bankının və Azərbaycan Respublikası Maliyyə Bazarlarına Nəzarət Palatasının normativ xarakterli aktlarına uyğun olaraq hazırlanmış və  Ödəniş kartı vasitəsilə hesablaşmaların aparılması, eləcə də Ödəniş kartının Müştəriyə təqdim edilməsi və ondan istifadə ilə bağlı Tərəflərin hüquq və vəzifələrini tənzimləyir.
+			<br/>2.3	Ödəniş kartı vasitəsilə əməliyyatların aparılması üzrə bank xidmətlərinin haqqı Bankın müvafiq əməliyyatın aparıldığı günə qüvvədə olan Tariflərinə (Bankın rəsmi internet səhifəsi www.ibar.az-da yerləşdirilmişdir) və/və ya müvafiq idarəetmə orqanının qərarına uyğun olaraq müəyyən olunur və Bank tərəfindən Müştərinin Kart hesabındakı pul vəsaitindən akseptsiz qaydada tutulur.
+			<br/>2.4	Ödəniş kartının qüvvədə olma müddəti onun üzərində göstərilmiş müvafiq ilin müvafiq ayının sonuncu günü bitir. 
+			<br/>2.5	Ödəniş kartından istifadə Azərbaycan Respublikasının qanunvericiliyi, Mərkəzi Bankın və Maliyyə Bazarlarına Nəzarət Palatasının normativ xarakterli aktları, eləcə dəmüvafiq beynəlxalq ödəniş sisteminin qaydaları və bu Müqavilə ilə tənzimlənir.
+			<br/>2.6	Bu Müqavilənin qüvvədə olduğu müddətdə Müştərinin ərizəsi əsasında sonuncun adına Bank tərəfindən bir neçə Ödəniş kartı buraxıla bilər. 
+
+	.
+
+			<br/><center><b>3.	Tərəflərin hüquq və vəzifələri</b></center>
+			<br/><b>3.1	Bankın vəzifələri:</b>
+
+			<br/>3.1.1	Müştəri tərəfindən bu Müqavilənin 3.3.1-ci yarımbəndinin tələblərinə riayət edildiyi təqdirdə və onun ərizəsi əsasında Müştərinin adına Kart hesabını açmaq;
+			<br/>3.1.2	Müştəriyə Ödəniş kartının verilməsi barədə müsbət qərar qəbul edildikdə, Müştəridən Ödəniş kartının verilməsi haqqında ərizənin alınması və Bankın Tariflərində və/və ya müvafiq idarəetmə orqanının qərarında nəzərədə tutulduğu halda müvafiq məbləğlərin Müştəri tərəfindən ödənilməsi anından  22 (iyirmi iki) iş günü müddətində Ödəniş kartını və Şen-kodu (zərflə və ya elektron şəkildə) Müştəriyə (sonuncunun şəxsiyyətini təsdiq edən sənədin təqdim edilməsi şərtilə) vermək; 
+			<br/>3.1.3	Qanunvericiliyin və Müqavilənin tələblərinə əməl etməklə Müştəri tərəfindən Ödəniş kartı vasitəsilə həyata keçirilən əməliyyatlar üzrə hesablaşmaların vaxtında aparılmasını təmin etmək;
+			<br/>3.1.4	Ödəniş kartı vasitəsilə aparılan əməliyyatları Kart hesabında olan pul vəsaitləri həddində həyata keçirmək; 
+			<br/>3.1.5	Müştərinin müraciəti əsasında Kart hesabı üzrə pul vəsaitlərinin hərəkətinə dair çıxarışları 11(on bir) iş günü müddətində sonuncuya təqdim etmək;
+			<br/>3.1.6	Qanunvericilikdə nəzərdə tutulmuş qaydada Kart hesabı və Ödəniş kartları vasitəsilə aparılan əməliyyatlara dair bank sirrini qorumaq;
+			<br/>3.1.7	Ödəniş kartının / ŞEN-kodun itirildiyi, oğurlandığı, məhv olduğu, zədələləndiyi, habelə fırıldaqçılıq (fraud) əməliyyatlarının baş verdiyi  hallarda Müştəriyə yeni Ödəniş kartının verilməsi barədə müsbət qərar qəbul edildikdə, sonuncudan müvafiq ərizənin alınması və Bankın Tariflərində və/və ya müvafiq idarəetmə orqanının qərarında nəzərdə tutulduğu halda müvafiq məbləğlərin Müştəri tərəfindən ödənilməsi anından  22 (iyirmi iki)  iş günü müddətində yeni Ödəniş kartının Müştəriyə verilməsini təmin etmək;
+			<br/>3.1.8	Müştəridən daxil olmuş məlumat əsasında Ödəniş kartından/Əlavə kartdan istifadə edilməklə əməliyyatların həyata keçirilməsini dərhal dayandırmaq;
+			<br/>3.1.9	Ödəniş kartının, ŞEN-kodun itirilməsi haqqında Müştəridən məlumat aldığı anda Ödəniş kartını bloklaşdırmaq;
+			<br/>3.1.10	Müqavilə hər hansı səbəbdən ləğv edildiyi halda, Kart hesabının qalığını Müştəriyə qaytarmaq;
+			<br/>3.1.11	Kart hesabına daxil olan pul vəsaitlərinin toxunulmazlığını təmin etmək.
+
+			<br/><b>3.2	Bankın hüquqları:</b>
+
+			<br/>3.2.1	Müştəriyə/Əlavə kartın istifadəçisinə Ödəniş kartının/Əlavə kartın (yenidən) buraxılmasından, təqdim edilməsindən, o cümlədən fəaliyyətinin bərpa edilməsindən səbəblərini göstərmədən imtina etmək;
+			<br/>3.2.2	Müştəri bu Müqavilənin 3.3.1-ci yarımbəndində göstərilən sənədləri və anketləri dolduraraq Banka təqdim etmədikdə, Kart hesabının açılmasından imtina etmək;
+			<br/>3.2.3	Kart hesabından və Müştərinin Bankdakı digər hesablarından Ödəniş kartından/Əlavə kartdan istifadə edilməklə aparılmış əməliyyatların məbləğlərini, texniki overdraft məbləğlərini, Bankın Tariflərinə və/və ya müvafiq idarəetmə orqanının qərarına uyğun olaraq bank komissiyalarını, cərimə faizlərininin məbləğlərini, o cümlədən Ödəniş kartından istifadə (eləcə də Bankın kartının ləğv edilməsi, bloklaşdırılması və.s) ilə bağlı Bankın çəkdiyi faktiki xərclərin məbləğlərini akseptsiz qaydada silmək;
+			<br/>3.2.4	Ödəniş kartından istifadə ilə bağlı Bank tərəfindən müəyyən olunmuş birdəfəlik və/və ya gündəlik əməliyyat limitlərini Müştərinin müraciəti əsasında Müştəriyə münasibətdə dəyişdirmək, ləğv etmək və ya bunlardan imtina etmək;
+			<br/>3.2.5	Müştəri tərəfindən bu Müqavilə üzrə öhdəliklərin icrası pozulduqda,  Qanunvericilikdə/bu Müqavilədə nəzərdə tutulmuş digər hallarda Müqaviləni birtərəfli qaydada ləğv etmək, Ödəniş kartını/Əlavə kartları bloklaşdırmaq/ləğv etmək, eləcə də Ödəniş kartını/Əlavə kartları geri tələb etmək;
+			<br/>3.2.6	Bankın Tariflərində (o cümlədən Ödəniş kartından istifadə ilə bağlı birdəfəlik və/və ya gündəlik limitlərdə) və Kart vasitəsilə aparılan əməliyyatların qaydalarında birtərəfli qaydada dəyişiklik etmək;
+			<br/>3.2.7	Ödəniş kartı Müştəri tərəfindən götürülmədikdə, onun hazırlanmasından 60 (altmış) gün müddətində Ödəniş kartını ləğv etmək, Kart hesabını bağlamaq və bu Müqaviləyə birtərəfli qaydada xitam vermək. Bu zaman tutulmuş komissiyalar Müştəriyə qaytarılmır. 
+			<br/>3.2.8	Müştəridən onun eyniləşdirilməsi üçün zəruri olan bütün sənədləri və məlumatları almaq;
+			<br/>3.2.9	Kart hesabının açılması və Ödəniş kartının buraxılması üçün zəruri olan sənədlərlə yanaşı, Müştərinin pul vəsaitlərinin qeyri-sağlam xarakterli əməliyyatlarda, o cümlədən çirkli pulların yuyulmasında və terrorizmin maliyyələşdirilməsində istifadə edilmədiyinə əmin olmaq məqsədilə qanunvericiliyə zidd olmayan digər sənədlərin də təqdim edilməsini tələb etmək;
+			<br/>3.2.10	Azərbaycan Respublikasının qanunları, tərəfdar çıxdığı beynəlxalq müqavilə və sazişlərdən irəli gələn, həmçinin zəruri hesab etdiyi digər hallarda Müştəridən onun pul axını, maliyyə mənbələri, özünün və imza hüququ olan şəxslərin eyniləşdirilməsinə dair, lakin bununla məhdudlaşmayan digər məlumatları tələb etmək;
+			<br/>3.2.11	Azərbaycan Respublikası mövcud qanunvericiliyində və normativ xarakterli aktlarda nəzərdə tutulmuş hallarda Kart hesabını bağlamaq, Ödəniş kartı üzrə əməliyyatları dayandırmaq və ya Kart hesabındakı vəsaitləri təyinatı üzrə silmək;
+			<br/>3.2.12	Mövcud qanunvericiliyin tələblərinə uyğun rəsmiləşdirilmiş və Banka təqdim edilmiş məhkəmə qərarları, inkasso sərəncamları və digər səlahiyyətli dövlət orqanlarının sərəncamlarını mübahisəsiz (Müştərinin sərəncamı olmadan) icra etmək;
+			<br/>3.2.13	Müştərinin Bank qarşısında üzərinə götürdüyü borc öhdəlikləri üzrə, o cümlədən əsas məbləğlər, faizlər, Bank tərəfindən tətbiq edilən cərimə (dəbbə) sanksiyalarını və digər pul öhdəlikləri üzrə pul vəsaitlərini Kart hesabından akseptsiz qaydada (Müştərinin sərəncamı olmadan) silmək və/və ya həmin öhdəliklərin icrasını təmin etmək üçün Kart hesabında olan pul vəsaitlərini bloklaşdırmaq; Müştərinin müvafiq öhdəlikləri Kart hesabının valyutasından fərqli valyutada olduqda, Kart hesabındakı vəsaitlər Müştəriyə məlumat verilmədən Bankın həmin gün üçün müəyyən olunmuş məzənnəsinə və ya çarpaz məzənnəyə əsasən konvertasiya edilərək Kart hesabından silinir.
+			<br/>3.2.14	Müştərinin təqdim etdiyi və ya digər mənbələrdən əldə edilən məlumatlar əsasında Kart hesabının Azərbaycan Respublikası ilə digər dövlətlər arasında bağlanmış ikitərəfli və ya çoxtərfli beynəlxalq müqavilələrə və ya “Maliyyə hesabları barədə məlumatların avtomatik mübadiləsi haqqında səlahiyyətli orqanlar arasında Çoxtərəfli Razılaşma” (bundan sonra “Çoxtərəfli Razılaşma” adlanacaq) çərçivəsində tətbiq edilən Ümumi Hesabatlılıq Standartına (Common Reporting Standard - CRS) uyğun olaraq müvafiq dövlət(lər)in və ya Çoxtərəfli Razılaşmanı imzalayan dövlətin hesabat verilməli hesabı olduğu müəyyən edilərsə, müvafiq dövlətlərarası müqavilədə/Çoxtərəfli Razılaşmada nəzərdə tutulan məlumatları həmin sənədlərlə müəyyənləşdirilən qaydada səlahiyyətli dövlət orqanına vermək; Bununla, Tərəflər razılaşırlar ki, Bank səlahiyyətli dövlət orqanına  Müştəri haqqında şəxsi məlumatları və onun hesabları haqqında məlumatları/hesabatları qanunvericiliklə müəyyən olunan hallarda təqdim edə bilər və belə hesabatların göndərildiyi hallarda Müştəriyə heç bir əlavə bildirişin göndərilməsi və/və ya ondan hər hansı şəkildə razılıq alınması tələb olunmayacaqdır.
+			<br/>3.2.15	Bank tərəfindən kart hesabına səhv olaraq daxil edilmiş və ya silinmiş pul vəsaitini Müştəriyə xəbər vermədən silmək və ya bərpa etmək;
+			<br/>3.2.16	Qeyri-rezidentlərə və ya alınması üçün müraciət olunan Ödəniş kartlarının/Əlavə kartların aid olduğu beynəlxalq kart təşkilatının tələblərinə uyğun olaraq verilməsinə məhdudiyyət qoyulan xarici ölkə vətəndaşlarına Ödəniş kartının/Əlavə kartın verilməsindən imtina etmək və zəruri olduğu hallarda risklərin sığortalanması üçün depozit məbləğinin ödənilməsini tələb etmək. 
+
+			<br/><b>3.3	Müştərinin vəzifələri:</b>
+
+			<br/>3.3.1	Azərbaycan Respublikası Mərkəzi Bankının normativ xarakterli aktlarına və Bankın qaydalarına, eləcə də Azərbaycan Respublikası ilə digər dövlətlər arasında bağlanmış ikitərəfli və ya çoxtərfli beynəlxalq müqavilələrə və ya Çoxtərəfli Razılaşmaya müvafiq olaraq Kart hesabının açılması üçün tələb olunan sənədləri, eləcə də zəruri anketləri (dolduraraq) Banka təqdim etmək;
+			<br/>3.3.2	Ödəniş kartı vasitəsilə əməliyyatları Azərbaycan Respublikasının mövcud qanunvericiliyinə uyğun aparmaq;
+			<br/>3.3.3	Ödəniş kartını digər şəxslərə verməmək, ŞEN-kodu gizli saxlamaq;
+			<br/>3.3.4	Ödəniş kartı üzrə əməliyyatları, müvafiq əməliyyata görə bank komissiyalarını da nəzərə almaqla, Kart hesabıdakı pul vəsaitləri həddində həyata keçirmək; Müştəriyə Kart hesabı üzrə overdraft təqdim edilmir.
+			<br/>3.3.5	Ödəniş kartından istifadə üzrə xidmət haqqını və Bankın Tariflərində və/və ya müvafiq idarəetmə orqanının qərarında nəzərdə tutulmuş halda digər məbləğləri (sığorta depoziti və s.), Ödəniş kartı vasitəsilə apardığı əməliyyatların məbləğlərini, Bankın Tariflərinə uyğun olaraq komissiyaları və cərimə faizlərini, eləcə də Ödəniş kartından istifadə ilə bağlı Bankın çəkdiyi digər xərclərin əvəzini Banka ödəmək;
+			<br/>3.3.6	Texniki overdraft baş verdiyi təqdirdə, yaranmış borcu və Bankın Tariflərində və/və ya müvafiq idarəetmə orqanının qərarına nəzərdə tutulduğu halda cərimə faizlərini 22 (iyirmi iki) iş günü ərzində Banka ödəmək;
+			<br/>3.3.7	Bank tərəfindən kart hesabına səhv daxil olmuş pul vəsaitlərini Bankın müvafiq tələbini aldıqdan sonra 1 (bir) iş günündən gec olmayaraq geri qaytarmaq;
+			<br/>3.3.8	Bu Müqavilənin 3.2.9-3.2.10-cu yarımbəndlərində qeyd edilmiş məlumatları və sənədləri Banka 1 (bir) iş günü müddətində təqdim etmək; 
+			<br/>3.3.9	Ödəniş kartının qorunub saxlanmasını təmin etmək və onun yararsız hala düşməsinə yol verməmək;
+			<br/>3.3.10	Ödəniş kartı vasitəsilə aparılmış əməliyyatlar üzrə sənədləri özündə saxlamaq və hər hansı bir əməliyyatı mübahisələndirdiyi halda müvafiq əməliyyata dair sənədləri Banka təqdim etmək;
+			<br/>3.3.11	Adı, soyadı, atasının adı,  ünvanı və digər əlaqə vasitələri dəyişdikdə, müvafiq dəyişikliklərlə bağlı  zəruri məlumatları 5 (beş) iş günü ərzində Banka təqdim etmək; 
+			<br/>3.3.12	Kart/ŞEN-kod itirildikdə, oğurlandıqda, habelə fırıldaqçılıq (fraud) əməliyyatları baş verdikdə, o cümlədən Ödəniş kartı vasitəsilə (o cümlədən internet vasitəsilə) əməliyyatların aparılması zamanı Ödəniş kartının rekvizitlərinin üçüncü şəxslərə açıqlanması şübhələri yarandıqda Ödəniş kartının bloklaşdırılması üçün dərhal Bankın müştəri xidmətinin telefon nömrəsi və ya “Azərikard” prosessinq mərkəzinin Ödəniş kartının arxasında göstərilən telefon nömrəsi vasitəsilə xəbardar etmək və kartın bloklanılması barədə xidmət göstərən məsul işçinin təsdiqini almaq; MobilBanking və İnternetBanking xidmətlərinin istifadəçiləri həmin xidmətlərdən istifadə etməklə də Ödəniş kartını bloklaşdıra bilərlər.
+			<br/>3.3.13	Bank qarşısında üzərinə götürdüyü borc öhdəlikləri üzrə, o cümlədən əsas məbləğlər, faizlər, Bank tərəfindən tətbiq edilən cərimə (dəbbə) sanksiyaları və digər pul öhdəlikləri üzrə pul vəsaitlərini, eləcə də 3.3.5-3.3.6-cı yarımbəndlərində qeyd olunmuş məbləğləri akseptsiz qaydada (Müştərinin sərəncamı olmadan) Kart hesabından silmək və/və ya hesabda olan pul vəsaitlərini bloklaşdırmaq hüququnu Banka vermək; 
+			<br/>3.3.14	Kart hesabında olan pul vəsaitindən hər hansı qeyri-qanuni məqsəd, o cümlədən çirkli pulların yuyulması (qeyri-qanuni yolla əldə edilmiş gəlirlərin leqallaşdırılması) və terrorizmin maliyyələşdirilməsi üçün istifadə etməyəcəyinə təminat vermək və buna görə məsuliyyət daşımaq;
+			<br/>3.3.15	Əlavə kartın istifadəçisini bu Müqavilənin şərtləri ilə tanış etmək;
+			<br/>3.3.16	Bu Müqavilə imzalandığı tarixdən sonra, Müştərinin Banka təqdim etdiyi anketlərdə, formalarda və ya digər sənədlərdə qeyd edilmiş faktiki\hüquqi vəziyyətin\məlumatların digər şəkildə dəyişməsi və ya həqiqətə uyğun olmaması aşkar olunduğu təqdirdə, Banka bu barədə 30 (otuz) iş günü əzrində yazılı formada məlumat vermək.
+
+			<br/><b>3.4	Müştərinin hüquqları:</b>
+
+			<br/>3.4.1	Ödəniş kartından bankomat, POS-terminallar və digər elektron qurğulardan nağd pulun çıxarılması üçün və nağdsız ödənişlərin aparılması üçün istifadə etmək;
+			<br/>3.4.2	Kart hesabından çıxarışlar almaq;
+			<br/>3.4.3	Ödəniş kartı/ŞEN-kod itirildikdə,oğurlandıqda, habelə fırıldaqçılıq (fraud) əməliyyatları baş verdikdə, o cümlədən Ödəniş kartı vasitəsilə (o cümlədən internet vasitəsilə) əməliyyatların aparılması zamanı Ödəniş kartının rekvizitlərinin üçüncü şəxslərə açıqlanması şübhələri yarandıqda Ödəniş kartının bloklaşdırılması üçün 3.3.12-ci yarımbənddə nəzərdə tutulmuş qaydada Banka məlumat vermək və yeni Ödəniş kartının verilməsinə dair ərizə ilə Banka müraciət etmək;
+			<br/>3.4.4	Ödəniş kartından istifadə edilməsi qaydalarına dair Bankdan məsləhətlər almaq;
+			<br/>3.4.5	Bankı kartı vasitəsi ilə aparılmış əməliyyatlara görə pul vəsaitlərinin Kart hesabından silinməsindən 45 (qırx beş) gün müddətində istənilən əməliyyatı mübahisələndirmək; Əməliyyat həmin müddətdə mübahisələndirilmədikdə silinmənin düzgünlüyü Müştəri tərəfindən təsdiqlənmiş hesab edilir.
+			<br/>3.4.6	Öz mülahizəsinə əsasən seçdiyi 14 yaşı tamam olmuş yaxın qohumlarının (ata, ana, baba, nənə, ər, arvad,  övlad, bacı, qardaş) adına Əlavə kartın buraxılması ilə bağlı Banka ərizə ilə müraciət etmək; Bank tərəfindən Əlavə kartın verilməsi barədə müsbət qərar qəbul edildikdə, Əlavə kart 22 (iyirmi iki)  iş günü ərzində müvafiq ərizədə göstərilmiş şəxsə, sonuncu tərəfindən şəxsiyyətini təsiq edən sənədin təqdim edilməsi şərtilə, təqdim edilir. Əlavə kart vasitəsilə aparılmış bütün əməliyyatlar, o cümlədən həmin əməliyyatlar üzrə bank komissiyaları üzrə bütün silinmələr Ödəniş kartı üzrə Kart hesabından həyata keçirilir. Əlavə kart vasitəsilə aparılmış bütün əməliyyatlara görə məsuliyyəti Müştəri daşıyır. Ödəniş kartı üzrə eyni vaxtda qüvvədə olan Əlavə kartların sayı __-dən artıq ola bilməz. 
+			<br/>3.4.7	Bankın “SMS-Məlumatlandırma”, “E-mail-Məlumatlandırma”, MobilBanking və İnternetBanking xidmətlərindən həmin xidmətlərə qoşulmaqla və  Bankın Tariflərində və/və ya müvafiq idarəetmə orqanının qərarında nəzərdə tutulduğu halda xidmət haqqı ödəməklə  istifadə etmək; 
+			<br/>3.4.8	Bu Müqavilənin 4.5-ci bəndində qeyd olunmuş hal baş verdikdə, Bankın müştəri xidmətinin nömrəsinə  və ya “Azərikard” prosessinq mərkəzinin Ödəniş kartının arxasında göstərilən telefon nömrəsinə zəng etməklə və əvvəlcədən Banka təqdim etdiyi məxfi kodu bildirməklə Ödəniş kartını blokdan çıxarmaq və Kart hesabı üzrə əməliyyatların aparılmasını bərpa etmək; 
+			<br/>3.4.9	Bankın bu barədə 30 (otuz) gün əvvəlcədən yazılı şəkildə xəbərdar edilməsi, Bank qarşısında bu Müqavilədən irəli gələn bütün maliyyə öhdəliklərinin icra edilməsi və Bank tərəfindən tələb irəli sürüldükdə Ödəniş kartının və bütün Əlavə kartların Banka qaytarılması şərtilə bu Müqaviləni birtərəfli qaydada ləğv etmək.
+
+
+
+			<br/><center><b>4.	Kart hesabının rejimi</b></center>
+			<br/>4.1	Kart hesabı Müştəriyə Ödəniş kartı vasitəsilə əməliyyatların aparılması və həmin əməliyyatların uçotunu aparmaq üçün açılır.
+			<br/>4.2	Kart hesabına pul vəsaitləri qanunvericiliyin tələblərinə əməl edilməklə nağd və ya nağdsız qaydada mədaxil edilə bilər. 
+			<br/>4.3	Bu bəndin tələbləri nəzərə alınmaqla, hesabdakı pul vəsaitlərinin nağd məxarici yalnız bankomat və/və ya POS-terminal vasitəsilə həyata keçirilə bilər. Kartın müddəti bitdiyi hallarda və ya bu Müqavilənin 3.1.9-cu bəndində nəzərdə tutulduğu hallarda Ödəniş kartı bloklaşdırıldıqda qüvvədə olan normativ aktların tələblərinə uyğun olaraq, hesabdan nağd pul digər qaydada məxaric edilə bilər. 
+			<br/>4.4	Müştəri Kart hesabındakı pul vəsaitlərindən yalnız Ödəniş kartı vasitəsilə əməliyyatların aparılması zamanı istifadə edə bilər.
+			<br/>4.5	ŞEN-kod üç dəfə yalnış yığıldıqda Ödəniş kartı/Əlavə kart avtomatik olaraq bloklaşdırılır və ŞEN-koddan istifadə etməklə Kart hesabı üzrə əməliyyatların aparılması dayandırılır. 
+			<br/>4.6	Ödəniş kartı vasitəsilə aparılan əməliyyatlar üzrə tətbiq edilən gündəlik və/və ya birdəfəlik limitlər Bankın Tarifləri və/və ya müvafiq idarəetmə orqanının qərarı ilə müəyyən olunur.
+			<br/>4.7	Ödəniş kartından istifadə etməklə digər bankların bankomatlarından və elektron qurğularından nağd pul vəsaitlərinin çıxarışı zamanı Müştəridən Bankın komissiyaları ilə yanaşı həmin bankların da komissiyaları tutula bilər.
+			<br/>4.8	Kart hesabının valyutasından fərqli valyutada Kartdan istifadə etməklə aparılmış əməliyyatlar üzrə əməliyyatın valyutasından Kart hesabının valyutasına vəsaitlərin konvertasiyası əməliyyatın faktiki aparılması tarixindən asılı olmayaraq əməliyyat üzrə məlumatın işlənmə gününə Bankda qüvvədə olan Ödəniş kartları üçün valyuta mübadiləsi məzənnəsi əsasında həyata keçirilir.
+			<br/>4.9	Müştərinin sərəncamı olmadan Kart hesabın¬dakı pul vəsaitinin silinməsinə məhkəmənin qərarı ilə, habelə qanunla müəyyənləşdirilmiş və ya bu Müqavilədə nəzərdə tutulmuş hallarda yol verilir.
+			<br/>4.10	Kart hesabından çıxarışlar və digər sənədlər Müştəriyə (qanuni nümayəndəsinə) vəkalətnaməsiz, digər nümayəndələrinə isə yalnız müvafiq vəkalətnamə əsasında verilir.
+			<br/>4.11	Kart hesabında olan qalığa və ya Kart hesabındakı pul vəsaitlərindən istifadə etməsinə görə Bank Müştəriyə heç bir faizlər ödəmir. 
+			<br/>4.12	Kart hesabının qeyri-qanuni məqsədlər, o cümlədən çirkli pulların yuyulması (qeyri-qanuni yolla əldə edilmiş gəlirlərin leqallaşdırılması) və terrorizmin maliyyələşdirilməsi məqsədilə açılması və istifadə edilməsi qadağandır.
+			<br/>4.13	Kart hesabı, Ödəniş kartı vasitəsilə aparılmış əməliyyatlar, Kart hesabının qalığı, habelə Müştəri haqqında məlumatlar bank sirridir və üçüncü şəxslərə yalnız Azərbaycan Respublikası qanunvericiliyində nəzərdə tutulan hallarda verilir.
+			<br/>4.14	Müştəri Kart hesabından sahibkarlıq fəaliyyəti ilə əlaqədar istifadə edilə bilməz.
+			<br/>4.15	Kart hesabına daxil olan pul vəsaitlərinin valyutası hesabın valyutasından fərqli olduqda, müvafiq vəsaitlər Müştəriyə məlumat verilmədən Bankın həmin gün üçün müəyyən olunmuş məzənnəsinə və ya çarpaz məzənnəyə əsasən konvertasiya edilərək Kart hesabına mədaxil edilir.
+
+
+
+			<br/><center><b>5.	Kart hesabı üzrə göstərilən əlavə xidmətlər</b></center>
+			<br/><b>5.1	“Məlumat mərkəzi” xidməti:</b>
+			<br/>5.1.1	Bank Müştəriyə “Məlumat mərkəzi” xidmətini göstərir. “Məlumat mərkəzi” xidməti dedikdə Telefonla Banka zəng edərək müraciəti əsasında ona verilmiş “Məlumat kodunu”  telefonun klaviaturasında yığan və özünü təqdim edən Müştəriyə hesabdakı pul vəsaitinin miqdarı və hesab üzrə aparılmış əməliyyatlar barədə məlumat verilməsi başa düşülür. 
+			<br/>5.1.2	Müştəri “Məlumat kodunu” mühafizə etməlidir. Bank “Məlumat kodun” üçüncü şəxslərin əlinə keçməsinə görə məsuliyyət daşımır.
+
+			<br/><b>5.2	“SMS/E-mail məlumatlandırılma” xidməti:</b>
+			<br/>5.2.1	Bank Müştəriyə “SMS/E-mail məlumatlandırılma” xidmətini göstərir; Müştəri bu Müqavilənin qüvvədə olduğu müddətdə Banka ərizə təqdim etməklə həmin xidmətlərə qoşula bilər.
+			<br/>5.2.2	Müştəri “Cari hesab üzrə SMS-Məlumatlandırma” xidmətinə qoşulduqda Hesabı üzrə aparılmış əməliyyatı barədə mobil telefon nömrəsinə SMS şəklində məlumat (bildiriş), “E-mail-Məlumatlandırma” xidmətinə qoşulduqda aparılan əməliyyatlara dair bank hesabından çıxarış elektron poçt ünvanına göndəriləcək.
+			<br/>5.2.3	Aparılmış müvafiq əməliyyatlara dair məlumat Müştəriyə aşağıdakı qaydada və müddətlərdə göndərilir:
+			<br/>5.2.3.1	SMS vasitəsilə: əməliyyatın aparıldığı gün (Müştərinin seçimindən asılı olaraq, hesab üzrə yalnız mədaxil əməliyyatları və ya məxaric əməliyyatları yaxud hər iki əməliyyat növü üzrə bildirişlər göndərilə bilər);
+			<br/>5.2.3.2	E-mail vasitəsilə: Müştərinin seçiminə uyğun olaraq, əməliyyatın aparıldığı günündən sonrakı iş günü, həftədə bir dəfə və ya ayda bir dəfə.
+			<br/>5.2.4	Müştəri “E-mail-Məlumatlandırma” xidmətinin istifadəsi üçün işlək elektron poçt ünvanına, “SMS-Məlumatlandırma” xidmətinin istifadəsi üçün isə işlək mobil telefon nömrəsinə malik olmalıdır.
+			<br/>5.2.5	Müştəri ona təqdim olunan xüsusi kodun və özünün müəyyən etdiyi kod sözünün kənar şəxslərə açıqlamamağı öhdəsinə götürür və buna görə məsuliyyət daşıyır.
+			<br/>5.2.6	Müştəri elektron poçt ünvanını və ya mobil telefonun nömrəsini dəyişdikdə, onun kompüteri və ya mobil telefonu və ya mobil telefonunun SİM-kartı itirildikdə, həmçinin öz elektron poçt qutusuna kənar şəxslərin müdaxiləsini aşkar etdikdə dərhal bu barədə Banka rəsmi olaraq müraciət etməlidir.
+			<br/>5.2.7	Müştəri müvafiq xidmətlərə qoşulmaya dair Banka təqdim etdiyi ərizədə müvafiq məlumatları düzgün göstərmək öhdəliyi daşıyır və həmin məlumatların dəqiqliyinə və düzgünlüyünə görə məsuliyyət daşıyır.
+			<br/>5.2.8	Müştəri ona təqdim olunan xüsusi kodun və özünün müəyyən etdiyi kod sözünün kənar şəxslərə açıqlamamağı, həmçinin elektron poçt qutusunu və mobil telefonunu  kənar şəxslərin müdaxiləsindən qorumağı öhdəsinə götürür və buna görə məsuliyyət daşıyır.
+			<br/>5.2.9	Müştəri Bankdan asılı olmayan səbəblərdən irəli gələn bütün riskləri öz üzərinə götürür.Bank, ondan asılı olmayan səbəblərə görə (üçüncü şəxslərin avadanlığında, şəbəkələrində və əlaqə xətlərində qəzalar və başqa nasazlıqlar və.s) müvafiq məlumatların Müştəriyə göndərilməsində gecikmələrə, habelə bu kimi hallarda məlumatların bütövlüyünə və məxfiliyinə görə məsuliyyət daşımır və Müştəri Bankdan asılı olmayan səbəblərdən irəli gələn bütün riskləri öz üzərinə götürür.
+			<br/>5.2.10	“SMS/E-mail məlumatlandırılma” xidmətlərinə görə Müştəridən Bankın qüvvədə olan Tariflərinə və/və ya müvafiq idarəetmə orqanının qərarına uyğun xidmət haqqı tutulur
+
+			<br/><b>5.3	“İBAM-Mobil Bank” və “İBAbanking İnternet Bank”xidmətləri:</b>
+			<br/>5.3.1	 Bank Müştəriyə “İBAM-Mobil Bank” və “İBAbanking İnternet Bank” xidmətini göstərir. Müştəri bu Müqaviləni imzlamaqla təsdiq edir ki, həmin xidmətlərdən istifadə qaydaları (Bankın www.ibar.az internet saytında yerləşdirilib) ilə tanış edilmişdir. 
+			<br/>5.3.2	Müştərinin imzasının analoqundan istifadə etməklə “İBAM-Mobil Bank” və “İBAbanking İnternet Bank” vasitəsilə əməliyyatların  aparılması və sənədlərin imzalanması zamanı yarana biləcək bütün risklərə görə məsuliyyət Müştərinin üzərinə düşür və Bank buna görə məsuliyyət daşımır. 
+			<br/>5.3.3	Müştəri tərəfindən proqram təminatının düzgün quraşdırılmamasından əmələ gələn problemlərə görə Bank məsuliyyət daşımır.
+			<br/>5.3.4	Bank İnternet şəbəkəsində yaranmış problemlərə görə Mobil Bankın əlavəsinin, mobil cihazın və ya İnternet Bankçılıq proqramının müvafiq qaydada işləməməsinə görə məsuliyyət daşımır.
+			<br/>5.3.5	Bank Müştəri tərəfindən məlumatların ötürülməsi zamanı yaranan problemlərə görə heç bir məsuliyyət daşımır və Müştəri ilə onun İnternet-provayderi arasında olan mübahisələrdə iştirak etmir.
+			<br/>5.3.6	Müştəri İnternet Bankçılıq sistemi vasitəsilə həyata keçirilən elektron əməliyyatların mövcud qanunvericiliyə uyğun tərtib edilməsinə, onların buraxılış məlumatlarını istifadə etməklə təsdiq edilməsinə, habelə Müştəri tərəfindən İnternet Bankçılıq sisteminə daxil edilən məlumatların dürüstlüyünə və tamlığına görə məsuliyyət daşıyır, bununla bağlı yarana biləcək bütün risklərə və Müştəriyə dəymiş zərərə görə məsuliyyəti tam olaraq Müştəri daşıyır.
+			<br/>5.3.7	Müştəri Bankın bu maddədə qeyd olunmuş xidmətlərə dair qaydalara birtərəfli qaydada dəyişikliklər etməsi hüququnu qəbul edir. Yenilənmiş qaydalar Bankın internet saytında yerləşdirildiyi gün Müştəri tərəfindən onların qəbul edildiyi gün sayılır.
+
+
+			<br/><center><b>6.	Tərəflərin məsuliyyəti</b></center>
+			<br/>6.1	Tərəflər bu Müqavilədə nəzərdə tutulmuş vəzifələrin lazımınca yerinə yetirilməməsinə görə Azərbaycan Respublikasının qüvvədə olan qanunvericiliyi ilə məsuliyyət daşıyırlar.
+			<br/>6.2	Bank, qanunda nəzərdə tutulan hallarda Kart hesabındakı pul vəsaiti üzərinə həbs qoyulduğu və ya hesablar üzrə əməliyyatların dayandırıldığı hallarda Ödəniş kartı vasitəsilə əməliyyatların aparılmamasına görə məsuliyyət daşımır.
+			<br/>6.3	Müştəri internet vasitəsilə Ödəniş kartından istifadə etməklə aparılmış bütün əməliyyatlar üzrə məsuliyyəti tam şəkildə özü daşıyır. 
+			<br/>6.4	Müştəri Ödəniş kartından istifadə zamanı təhlükəsizlik qaydalarına əməl edilməməsinə görə məsuliyyəti tam şəkildə özü daşıyır. 
+			<br/>6.5	Əlavə kartlarla aparılmış bütün əməliyyatlar üzrə məsuliyyəti tam şəkildə Müştəri özü daşıyır. 
+			<br/>6.6	Banka məxsus olmayan ATM və ya POS-terminal şəbəkəsində skimminq və ya şimminq yolu ilə hazırlanmış saxta kartlarla həyata keçirilən əməliyyatlara görə və belə əməliyyatların nəticəsində Müştəriyə vurulmuş ziyana görə Bank məsuliyyət daşımır.
+			<br/>6.7	Müştəri Azərbaycan Respublikasının normativ hüquqi aktlarının, habelə vergi və maliyyə məlumatlarının mübadiləsini nəzərdə tutan Azərbaycan Respublikasının tərəfdar çıxdığı beynəlxalq müqavilələrin və ya Çoxtərəfli Razılaşmanın tələblərinin tam və ya qismən yerinə yetirməməsi nəticəsində Banka tətbiq edilə biləcək maliyyə sanksiyaları və ya digər şəkildə dəyəcək zərərin əvəzinin tam ödənilməsinə məsuliyyət daşıyır.
+
+			<br/><center><b>7.	Fors-major vəziyyəti</b></center>
+			<br/>7.1	Fors-major hallarında (zəlzələ, daşqın, yer sürüşməsi, uçqun, yanğın, tətil, dövlət orqanlarının qərarları, bu müqavilənin yerinə yetirilməsinə mane olan hər hansı xarakterli hərbi əməliyyatlar, terror aktları) Tərəflər bu müqavilənin şərtlərini tam və ya qismən yerinə yetirilməməsinə görə məsuliyyət daşımırlar. Göstərilən səbəblərdən bu Müqavilənin icrası mümkün olmadıqda onun icrası həmin halın mövcud olduğu müddət ərzində dayandırılır. Fors-major hallarına istinad edən Tərəf bu halın baş verməsi haqqında digər Tərəfə dərhal yazılı məlumat verməlidir. 
+			<br/>7.2	Bu hallarla bağlı öhdəliklərin yerinə yetirilməməsi 6 (altı) aydan çox davam edərsə, hər bir Tərəf digər Tərəfə rəsmi formada bildirməklə bu Müqaviləni birtərəfli qaydada ləğv etmək hüququna malikdir.
+
+
+			<br/><center><b>8.	Müqavilənin müddəti və onun ləğv olunma qaydası</b></center>
+			<br/>8.1	Bu Müqavilə Tərəflər imzaladığı tarixdən qüvvəyə minir və Ödəniş kartının istifadə müddətinin bitdiyi gündən  45 (qırx beş) gün sonra (kart hesabına Priority Pass kartları bağlandıqda 60 (altmış) gün) qüvvədən düşmüş sayılır, bir şərtlə ki, Müştəri Müqavilə qüvvədə olan müddət ərzində yeni Ödəniş kartının buraxılması barədə Banka ərizə ilə müraciət etməsin və Bank tərəfindən ona yeni Ödəniş kartının verilməsi barədə müsbət qərar qəbul edilməsin.
+			<br/>8.2	Müqavilənin ləğv edilməsi Kart hesabının bağlanması üçün əsasdır
+			<br/>8.3	Müqaviləyə Tərəflərin qarşılıqlı razılığı əsasında və Qanunvericilikdə və/və ya Müqavilədə nəzərdə tutulmuş hallarda və qaydada Tərəflərin biri tərəfindən birtərəfli qaydada vaxtından əvvəl xitam verilə bilər.
+			<br/>8.4	Müqaviləyə  hər hansı səbəbdən xitam verildikdə, Bankın tələbi ilə Müştəri 3(üç) iş günü müddətində Müqavilə üzrə buraxılmış bütün Ödəniş kartlarını/Əlavə kartları Banka qaytarmalıdır.
+			<br/>8.5	Bank tərəfindən Müqavilə həmçinin aşağıdakı hallarda birtərəfli qaydada ləğv edilə bilər:
+			<br/>8.5.1	Müştəri tərəfindən hesabdan çirkli pulların yuyulması, terrorizmin maliyyələşdirilməsi və digər bu kimi məqsədlər üçün istifadə edilməsi müəyyən edildikdə, bununla bağlı şübhələr olduqda və ya belə şübhə üçün kifayət qədər əsaslar yarandıqda;
+			<br/>8.5.2	Müqavilənin 3.2.9-10-cu yarımbəndlərində qeyd edilən sənəd və/və ya məlumatlar Müştəri tərəfindən təqdim edilmədikdə
+			<br/>8.6	Müqavilənin 8.5.1-ci və 8.5.2-ci yarımbəndlərə əsasən ləğv edildiyi hallarda, Müştərinin Kart hesabındakı aktiv və passivləri üzrə əməliyyatlar, o cümlədən, depozit faizlərinin ödənilməsi (Müqavilədə nəzərdə tutulduğu halda), Kart hesabı üzrə Müştəri tapşırıqlarının yerinə yetirilməsi Bank tərəfindən birtərəfli qaydada dayandırılır və Müştəridən Bank qarşısındakı kredit öhdəliklərinin vaxtından əvvəl ödənilməsi tələb edilir. Qanunvericiliklə və daxili qaydalarla tələb olunduğu hallarda bu barədə müvafiq orqanlara məlumat verilir. 
+
+ 
+
+	 
+			<br/><center><b>9.	Tətbiq edilən hüquq və Mübahisələrin həll edilməsi qaydası </b></center>
+			<br/>9.1	Bu Müqavilə ilə tənzimlənməyən münasibətlər Azərbaycan Respublikasının Mülki Məcəlləsi, Azərbaycan Respublikası Mərkəzi Bankının qəbul etdiyi normativ xarakterli aktlar, bankdaxili qaydalar və Azərbaycan Respublikasının digər hüquqi aktları ilə tənzimlənir.
+			<br/>9.2	Bu Müqavilədən və ya onunla əlaqədar yaranan bütün mübahisələr, münaqişələr, fikir ayrılıqları və/və ya tələblər Tərəflər arasında danışıqlar yolu ilə həll edilir. 
+			<br/>9.3	Danışıqlar yolu ilə nizama salınmayan mübahisələr Azərbaycan Respublikasının qüvvədə olan  qanunvericiliyinə uyğun olaraq məhkəmə qaydasında həll edilir.
+
+						
+			<br/><center><b>10.	Əmanətlərin Sığortalanması Fondu, Bank və Müştəri</b></center>
+			<br/>10.1	Bank «30» İyul 2007-ci il tarixindən Əmanətlərin Sığortalanması Fondunun (bundan sonra – «Fond») iştirakçısı olaraq (03 saylı şəhadətnamə) Fonda sığorta haqqı ödəyir (bu haqq Müştəridən  tutulmur).
+			<br/>10.2	Müştərinin (Müqavilənin 10-cu maddəsinin məqsədləri üçün «Əmanətçi» adlandırılacaq) Kart hesabında bütün müvafiq valyutalarda olan pul vəsaiti (Müqavilənin 10-cu maddəsinin məqsədləri üçün «əmanət» adlandırılacaq) «Əmanətlərin sığortalanması haqqında» Azərbaycan Respublikasının Qanunu (bundan sonra – “Qanun”) ilə müəyyən edilmiş hallarda, qaydada, miqdarda və şərtlərlə Fond tərəfindən sığortalanır.
+			<br/>10.3	Sığorta Hadisəsi – Bankın məcburi ləğvi və ya müflis elan olunması, Bankın Əmanətçi qarşısında öhdəliklərinin yerinə yetirilməsinə məhkəmə tərəfindən moratorium tətbiq edilməsi barədə məhkəmə qərarının qüvvəyə minməsi və Bankın Əmanətçi qarşısında öz öhdəliklərini yerinə yetirə bilməməsi faktının maliyyə bazarlarına nəzarət orqanı tərəfindən təsdiq edilməsidir.
+			<br/>10.4	Sığorta hadisəsi baş verdikdə, Fond aşağıdakı kütləvi informasiya vasitələrində Əmanətçiyə kompensasiya ödənilməsi yeri və vaxtı haqqında elan verir: 
+			<br/>a)	AzTV;
+			<br/>b)	İctimai TV;
+			<br/>c)	Azərbaycan qəzeti;
+			<br/>d)	Respublika qəzeti;
+			<br/>e)	Xalq qəzeti;
+			<br/>f)	AzərTAc informasiya agentliyi;
+			<br/>10.5	Fonddan kompensasiya almaq üçün Əmanətçi kütləvi informasiya vasitəsilərində göstərilən yerə yazılı ərizə ilə müraciət edir. Ərizəyə aşağıdakı sənədlər əlavə olunur:
+			<br/>a)	Şəxsiyyət vəsiqəsi və ya şəxsiyyəti təsdiqləyən digər sənəd;
+			<br/>b)	əmanəti təsdiqləyən sənədlər;
+			<br/>c)	Kart hesabı müqaviləsi.
+				Ərizənin verildiyi tarixdən etibarən 90 (doxsan) gün müddətində Fond tərəfindən Əmanətçiyə kompensasiya ödənilməlidir. Fond əmanətçilərin ərizələrini kompensasiya ödənişi haqqında bildirişin ilk dəfə dərc edildiyi gündən başlayaraq 1 (bir) il ərzində qəbul edir. Əmanətçinin kompensasiya almaq hüququ Fondun kompensasiyaların ödənilməsi haqqında elanı ilk dəfə dərc etdiyi gündən 5 (beş) il müddətində saxlanılır
+
+			<br/>10.6	Aşağıdakı əmanətlər qorunan əmanətlərə (sığorta hadisəsi baş verdikdə Fond tərəfindən qorunan əmanətçiyə kompensasiya olunan əmanət) aid edilmir:
+			<br/>a)	Bankın Azərbaycan Respublikasının ərazisindən kənarda açılmış bölmələri tərəfindən cəlb olunmuş əmanətlər;
+			<br/>b)	cinayət yolu ilə əldə edilmiş pul vəsaitlərinin və ya digər əmlakın leqallaşdırılması və terrorçuluğun maliyyələşdirilməsi ilə bağlı şübhəli əməliyyatlar nəticəsində qanunvericiliyə müvafiq qaydada müəyyən edilmiş əmanətlər;
+			<br/>c)	cinayətin törədilməsi nəticəsində yaranması məhkəmə qərarı ilə təsdiq edilmiş əmanətlər;
+			<br/>d)	üzərinə həbs qoyulmuş əmanətlər;
+			<br/>e)	cəlb edildiyi günə Qanunun 8.1.20-ci maddəsinə uyğun olaraq müəyyən edilmiş həddən yuxarı illik faiz dərəcəsi ilə qəbul edilmiş əmanətlər;
+			<br/>f)	fiziki şəxslərin sahibkarlıq fəaliyyəti ilə əlaqədar açdığı bank hesablarındakı pul vəsaitləri;
+			<br/>g)	fiziki şəxslərin bankın vəkalətli idarəetməsində olan pul vəsaitləri;
+			<br/>10.7	Fond sığorta hadisəsi baş verdikdə Əmanətçiyə sığortalanmış əmanətin məbləğinin 100 faizi həcmində, lakin 30 (otuz) min manatdan çox olmamaq şərtilə kompensasiya ödəyir.
+			<br/>10.8	Fond kompensasiyanı milli valyutada olan əmanət üzrə manatla, ABŞ dollarında olan əmanət üzrə ABŞ dollarında, Avroda olan əmanət üzrə isə Avroda Əmanətçiyə ödəyir. Əmanət ABŞ dolları və ya Avroda olmadıqda kompensasiya bu valyutaların biri ilə sığorta hadisəsinin baş verdiyi günə Azərbaycan Respublikası Mərkəzi Bankının müvafiq valyutalar üzrə müəyyən etdiyi rəsmi məzənnələr əsasında hesablanmış çapraz məzənnə üzrə hesablanır və ödənilir. Əmanətlər üzrə faizlər sığorta hadisəsinin baş verdiyi günə qədər hesablanmış məbləğdə ödənilir, bu şərtlə ki, kompensasiya Müqavilənin 10.7-ci bəndində göstərilən məbləğdən artıq olmasın.
+			<br/>10.9	Əmanətçinin Bankda, o cümlədən bankın yerli filiallarında və şöbələrində bir neçə əmanəti olduqda, yaxud həmin əmanətlər müxtəlif valyutalarda olduqda, Fond həmin əmanətləri toplayır və bir əmanət  
+			kimi manatla kompensasiya olunur. Əmanətçinin Fondun hər hansı digər iştirakçı bankında olan əmanətinə isə ayrıca əmanət kimi baxılır və kompensasiya ödənilir. 
+			<br/>10.10	Bank Əmanətçinin yazılı və ya şifahi sorğularına cavab olaraq, Bankın sığorta sistemində iştirakı, qorunan əmanətlər və kompensasiyalar barədə Əmanətçiyə məlumat verir
+			<br/>10.11	Sığorta hadisəsi baş verdiyi günə Əmanətçinin Bank qarşısında vaxtı çatmış öhdəliyi olduqda pul vəsaiti üzrə kompensasiya hesablanmış faizlər də daxil olmaqla Əmanətçinin Bank qarşısında icra edilməyən öhdəliyinin hissəsi kompensasiya olunan pul vəsaitinin məbləğindən çıxılmaqla qalıq hissəsi üzrə ödənilir.
+			<br/>10.12	Əmanət “Əmanətlərin tam sığortalanması haqqında” Azərbaycan Respublikasının qanununda nəzərdə tutulmuş müddətdə tam sığortalanır və sığorta hadisəsi baş verdikdə tam sığortalanmış əmanət üzrə kompensasiya əmanətin 100 faizi həcmində bu Müqavilənin 10.7-ci bəndində nəzərdə tutulan şərt tətbiq edilmədən ödənilir.
+			<br/>10.13	Əmanətçi aşağıda göstərilən ünvanda və ya əlaqə telefonları və elektron poçt vasitəsi ilə Fondla əlaqə saxlıya bilər: AZ1014, Bakı şəhəri, Bül-Bül prospekti 40 ; əlaqə tel: (99412) 596 65 91, 596 65 92, 596 65 93; Faks: (99412) 596 65 94; e-mail: adif@adif.az; sayt: www.adif.az. 
+			 
+			
+			<br/><center><b>11.	Yekun müddəalar</b></center>
+			<br/>11.1	Bu Müqaviləyə dair bütün əlavə və dəyişikliklər yazılı formada tərtib edilir və bu Müqavilənin tərkib hissəsini təşkil edir.
+			<br/>11.2	Müştərinin əlaqə vasitələri (ünvanı, telefon nömrəsi və.s ) və bank rekvizitləri dəyişdikdə,  o, müvafiq dəyişikliyin baş verdiyi tarixdən 5 (beş) iş günü müddətində  Bankı yazılı surətdə xəbərdar etməlidir. Belə xəbərdarlığın edilmədiyi təqdirdə Müştəriyə göndərilən istənilən göndəriş (sms, bildiriş, tələb, pretenziya və.s)  onun bu Müqavilənin şərtlərinə uyğun olaraq son məlum olan ünvanına/telefon nömrəsinə göndərilir və Müştəri həmin ünvanda yaşamasa/telefon nömrəsinə sahib olmasa da lazımı qaydada çatdırılmış hesab olunur. 
+			<br/>11.3	Müştəri tərəfindən təklif və şikayətlərin Bankın müvafiq struktur bölməsinə təqdim edilməsi aşağıdakı əlaqə vasitələri ilə həyata keçirilə bilər:
+			<br/>-	Qaynar xətt: 937;
+			<br/>-	Elektron poçt: info@ibar.az və ya muraciet@ibar.az.
+ 
+			<br/>11.4	Bu Müqavilə eyni hüquqi qüvvəyə malik iki nüsxədən tərtib edilmişdir və Tərəflərin hər birində bir nüsxədə saxlanılır.
+
+
+			<br/><center><b>12.	Tərəflərin rekvizit və imzaları:</b></center> </p>
+		</td>
+		</tr>
+		
+		<tr>
+		    <td class="c" colspan="3">
+			     <table width="100%" class="tb">
+					<tr>
+						<td class="c" width="10%"> </td>
+						<td class="brd" width="40%">Bank</td>
+						<td class="brd" width="40%">Müştəri</td>
+						<td class="c" width="10%"> </td>
+					</tr>
+					<tr>
+						<td class="c"> </td>
+						<td class="brd">“Azərbaycan Beynəlxalq Bankı " ASC
+									<br/>Ünvan: AZ1005, Bakı, Nizami küç., 67
+									<br/><ins>[[${data.getBranchName()}]]</ins> 
+									<br/>Ünvan: <ins>[[${data.getBankAddress()}]]</ins>
+									<br/>VÖEN 9900001881
+									<br/>M/h:  AZ03NABZ01350100000000002944
+									<br/>Kod:  [[${data.getBranchPhone()}]]
+									<br/>SWIFT Bik: IBAZAZ2X
+									<br/>Tel: [[${data.getBranchPhone()}]]
+						</td>
+						<td class="brd"><ins>[[${data.getCustomerNumber()}]]</ins>_
+									  <br/>	<sup class="font6">(soyadı, adı, atasının adı) </sup>
+									  <br/>_<ins>[[${data.getIdNumber()}]], [[${data.getIdIssuedByAuthority()}]], [[${data.getIdIssuingDate()}]]</ins>_ 
+									  <br/>  <sup class="font6">(şəxsiyyət vəsiqəsində göstərilmiş məlumatlar)</sup>
+									  <br/>_<ins>[[${data.getAddress()}]]</ins>_ 
+									  <br/>	<sup class="font6">(yaşayış yeri və/və ya olduğu yer)</sup> 
+									  <br/>_<ins>[[${data.getCustomerNumber()}]]</ins>_ 
+									  <br/>	<sup class="font6">(müştəri nömrəsi)</sup> 
+									  <br/>Tel: [[${data.getPhone1()}]]
+						</td>
+						<td class="c"> </td>
+					</tr>
+
+					<tr>
+						<td class="c"> </td>
+						<td class="brd"><br/><br/>_<ins>[[${data.getBranchChief()}]] </ins>_
+										<br/><sup class="font6">(Səlahiyyətli şəxsin SAA)</sup>
+										<br/><br/>_____________________________
+										<br/><sup class="font6">(imza/möhür)</sup>
+						</td>
+						<td class="brd"><br/><br/><br/>
+										<br/><br/>_____________________________
+										<br/><sup class="font6">(imza)</sup>
+						</td>
+						<td class="c"> </td>
+					</tr>
+				 </table>
+			</td>
+		</tr>
+	  </table>	  
+    </body>
+</html>
